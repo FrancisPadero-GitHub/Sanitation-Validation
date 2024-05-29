@@ -1,0 +1,101 @@
+ACTIVITY 3: SANITIZATION & VALIDATION
+
+
+1 Setup Laravel Project '''''''''''''''''''''''''''''''\
+						      	\
+2 Install and Configure Middleware ''''''''''''''''''''''\
+							  >--------Done from act2 creation of AuthApp
+3 Create a Registration Form with Validation ............/
+							/
+4 Sanitize User Input ................................./
+
+
+
+5 Custom Validation Rules ..... Done! @ValidationRule.php
+
+
+
+6 Apply Sanitization and Validation to Login ..... Done! @LoginController.php
+
+
+
+7 Implement Form Requests for Cleaner Controllers ..... Done! 
+
+
+
+8 Testing ..... Try daw ninyo. Refer to #9 and #10
+
+
+
+9 Handling Validation Errors ..... Done!
+
+
+	### VALIDATION MESSAGES IN THE INPUT FIELDS: ###
+
+Name:
+	required: The name field is required.
+	string: The name must be a string.
+	max:255: The name may not be greater than 255 characters.
+
+Email:
+	required: The email field is required.
+	string: The email must be a string.
+	email: The email must be a valid email address.	
+	max:255: The email may not be greater than 255 characters.
+	unique: The email has already been taken.
+
+Password:
+	required: The password field is required.
+	string: The password must be a string.
+	min:8: The password must be at least 8 characters.
+	confirmed: The password confirmation does not match.
+
+User Type:
+	required: The user type field is required.
+	in:0,1: The selected user type is invalid (kailangan mupili either admin(1) or regular(0)).
+
+
+
+10 Additional Sanitization and Validation ..... Done!
+
+	For sanitation: Added removal HTML tags when submitting inputted infos.
+	For validation: Added min/max length for password field.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
